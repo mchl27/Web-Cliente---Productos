@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Menu Principal";
+    Layout = "~/Views/Shared/_Layout_main.cshtml";
+}
+
+
+<style>
+    .contenedor-principal {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .bienvenida {
+        position: relative;
+        z-index: 2;
+    }
+
+        .bienvenida h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .bienvenida p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .bienvenida button {
+            font-size: 1.2em;
+        }
+
+
+    .contenedor-principal {
+        padding: 50px 0; 
+        text-align: left;
+    }
+
+    .contenedor-principal button {
+        background-color: #0f268d;
+    }
+
+    .texto-izquierda {
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .palabras-derecha {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .palabra {
+        margin: 10px;
+        padding: 10px 20px;
+        border: 2px solid #404040;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #404040;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .palabra:hover {
+            background-color: #0f268d;
+            color: #fff;
+        }
+
+    .contenedor-principal a {
+        background-color: #0f268d;
+        color: white !important;
+    }
+
+        .contenedor-principal a:hover {
+                background-color: #0f268d !important;
+                color: white !important;
+        }
+
+</style>
+
+
+<div class="contenedor-principal">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 contenedor-bienvenida">
+                        <div class="texto-izquierda">
+                            <h1>Bienvenido/a</h1>
+                            <p>¡Sistema de gestión de Productos!</p>
+                            <p>Este sistema está diseñado para facilitar tus tareas diarias y mejorar la eficiencia en el administración de productos.</p>
+                            <button class="btn btn-primary">Conocer Más</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center imagen-derecha">
+                        <img src="~/img/1. Logo UDC.png" width="380px" class="img-fluid" alt="Alternate Text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

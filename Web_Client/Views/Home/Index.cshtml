@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Index";
+
+}
+
+<style>
+    .contenedor-principal {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        padding: 20px; /* Ajustamos el relleno */
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex; /* Cambiamos el display a flex para alinear los contenedores secundarios */
+        flex-wrap: wrap; /* Permitimos que los contenedores secundarios se envuelvan */
+        justify-content: space-around; /* Ajustamos la distribución de los contenedores secundarios */
+    }
+
+    .bienvenida {
+        position: relative;
+        z-index: 2;
+    }
+
+        .bienvenida h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .bienvenida p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .bienvenida button {
+            font-size: 1.2em;
+        }
+
+
+    .contenedor-principal {
+        padding: 50px 0; /* Reducir el espacio entre los contenedores */
+        text-align: left;
+    }
+
+    .contenedor-principal button {
+        background-color: #0f268d;
+    }
+
+    .texto-izquierda {
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .palabras-derecha {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .palabra {
+        margin: 10px;
+        padding: 10px 20px;
+        border: 2px solid #404040;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #404040;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .palabra:hover {
+            background-color: #0f268d;
+            color: #fff;
+        }
+
+    .contenedor-principal a {
+        background-color: #0f268d;
+        color: white !important;
+    }
+
+        .contenedor-principal a:hover {
+                background-color: #0f268d !important;
+                color: white !important;
+        }
+
+</style>
+
+<div class="contenedor-principal">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="bienvenida">
+                    <center>
+                        <h1>Sistema de Productos</h1>
+                        <p>¡Bienvenido de nuevo al sistema de Productos!</p>
+                        <p>Este sistema está diseñado para facilitar tus tareas diarias y mejorar la eficiencia en el administracion de productos.</p>
+                        <a href="@Url.Action("privacy", "Home")" class="btn btn-primary">Conocer Más</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
